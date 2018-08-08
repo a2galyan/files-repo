@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://jetty.mortbay.org/configure.dtd">
+<Configure class="org.eclipse.jetty.server.Server" id="Server">
+
+    <Set name="RequestLog">
+        <New id="RequestLog" class="org.eclipse.jetty.server.AsyncNCSARequestLog">
+            <Set name="filename">logs/request.log</Set>
+            <Set name="append">true</Set>
+            <Set name="extended">false</Set>
+            <Set name="LogTimeZone">GMT</Set>
+        </New>
+    </Set>
+
+</Configure>
